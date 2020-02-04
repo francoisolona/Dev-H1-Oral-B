@@ -1,5 +1,440 @@
 main{
-    background-image: linear-gradient(to left, #290f4b, #241751, #1f1e57, #18245c, #0f2a60);
-    color: white;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+body{
+    margin: 0;
+}
+.product img{
+    width: 130px;
+}
+.separator{
+    background: white;
+    width: 360px;
+    height: 2px;
+}
+
+/** Précommande **/
+
+.brushPreorder{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+div.brushBackground{
+    background-image: url(../images/brushzoom.png);
+    width: 570px;
+    height: 770px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 500px;
+}
+.preorder{
+    background: rgba(0, 0, 0, 0.4);
+    width: 450px;
+    padding: 15px;
+    margin-left: 50px;
+}
+.preorder p:first-child{
+    padding-top: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+.preorder p:nth-child(2){
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 3px;
+}
+.order_now{
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.preorder p:nth-child(5){
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.preorder ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.preorder ul li{
+    display: flex;
+    font-size: 20px;
+    height: 30px;
+}
+.preorder ul a:hover{
+    border: solid 2px #be2edd;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.black_circle{
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.white_circle{
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.shipping{
+    display: flex;
+}
+.shipping label{
+    padding-right: 5px;
+}
+.ship_location{
+    background-image: url(../images/locate.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+div.preIcons{
+    display: flex;
+    align-items: center;
+}
+.preIcons a{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.preIcons a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.basket{
+    background-image: url(../images/basket.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.cart{
+    background-image: url(../images/cart.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/** ARGUMENTS **/
+
+.arguments img{
+    width: 600px;
+    height: auto;
+    opacity: 0.5;
+}
+
+/*------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+/*** INSCRIPTION ***/
+
+    /*** Main ***/
+        
+        .background_form{
+            background-image: linear-gradient(to left, #290f4b, #241751, #1f1e57, #18245c, #0f2a60);
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .background_form2{
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .inscr-sep{
+            background: white;
+            width: 940px;
+            height: 1px;
+        }
+       .title{
+            font-size: 50px;
+            margin-top: 0px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+        }
+
+        div label{
+            font-size: 20px;
+        }
+
+        div label span{
+            color: red;
+            font-weight: bold;
+        }
+
+        div option,input,select{
+            color: black;
+            font-size: 20px;
+        }
+
+        .name{
+            margin-left: 10px;
+        }
+
+        div em{
+            font-size: 15px;
+        }
+        .check_text label{
+            font-size: 15px;
+        }
